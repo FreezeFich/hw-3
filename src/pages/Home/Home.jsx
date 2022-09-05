@@ -1,39 +1,53 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 
+
+import "./Home.css"
+
+
 function Home() {
+
+  const navigate = useNavigate();
+
+  const handleButton = () => {
+    navigate('/signin');
+  }
+  const handleAbout = () => {
+    navigate('/about');
+  }
   return (
     <div>
       <header>
-        <div class="header">
-            <img src="/images/Group 5.png" alt="" class="logo" />
+        <div className="header">
+            <img src="https://github.com/FreezeFich/css-cw-1/blob/main/images/Group%205.png?raw=true" alt="" className="logo" />
 
-            <div class="header-buttons ">
-                <img src="/images/search 1.png" alt="" height="20px" width="20px" />
-                <img src="/images/shopping-cart 1.png" height="20px" width="20px" alt="" />
-                <a href="#modalbox" class="sign-up">Sign Up</a>
-                <a href="#modalbox-signin" class="sign-in">Sign In</a>
+            <div className="header-buttons ">
+                <img src="https://cdn-icons-png.flaticon.com/512/4024/4024513.png" alt="" height="30px" width="30px" />
+                <img src="https://cdn-icons-png.flaticon.com/512/2838/2838895.png" height="30px" width="30px" alt="" />
+                <a href="/signin" className="sign-up">Sign Up</a>
+                <a href='/signin'className="sign-in">Sign In</a>
             </div>
         </div>
       </header>
-      <section class="block-one">
-            <div class="block-one-img">
-                <img src="/images/pexels-cottonbro-4503751 1.png" alt="" width="100%" />
+      <section className="block-one">
+            <div className="block-one-img">
+                <img src="https://github.com/FreezeFich/css-cw-1/blob/main/images/pexels-cottonbro-4503751%201.png?raw=true" alt="" width="100%" />
             </div>
-            <div class="block-one-content">
-                <h1 class="block-one-title">Kembang Flower Mantap</h1>
-                <p class="block-one-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            <div className="block-one-content">
+                <h1 className="block-one-title">Kembang Flower Mantap</h1>
+                <p className="block-one-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s,
+                    industry's standard dummy text ever since the 1500s,        <a className='about'>About</a>
                 </p>
-                <div class="block-one-buttons">
-                    <a href="" class="block-one-button-one">
+
+                <div className="block-one-buttons">
+                    <a href="" className="block-one-button-one">
                         <p>
                             Previous
                         </p>
                         <h1>Kaktus Plant</h1>
                     </a>
-                    <a href="" class="block-one-button-two">
+                    <a href="" className="block-one-button-two">
                         <p>Next</p>
                         <h1>Rahasia Plant</h1>
                     </a>
