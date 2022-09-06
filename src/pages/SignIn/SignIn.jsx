@@ -9,9 +9,11 @@ function SignIn() {
   const handleCross = () => {
     navigate('/');
   }
+
+  console.log('run')
   return (
     <div>
-              <div id="modalbox-signin" className="modal">
+        <div id="modalbox-signin" className="modal">
             <div className="modal-content-2">
 
                 <div className="sign-up_head">
@@ -50,7 +52,7 @@ function SignIn() {
                     </div>
                 </div>
             </div>
-            <a onClick={handleCross()} className="modal-exit-2">&times;</a>
+            <a onClick={handleCross} className="modal-exit-2">&times;</a>
         </div>
         <div id="modalbox" className="modal">
             <div className="modal-content">
@@ -124,7 +126,7 @@ function SignIn() {
                     </div>
                 </div>
             </div>
-            <a href='/' className="modal-exit">&times;</a>
+            {/* <a href='/' className="modal-exit">&times;</a> */}
         </div>
     </div>
   )

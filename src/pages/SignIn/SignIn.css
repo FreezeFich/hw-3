@@ -9,10 +9,9 @@
     justify-content: center;
     background: rgba(225, 225, 225, 0.7);
     transition: all .4s;
-    visibility: hidden;
-    opacity: 0;
+  
     z-index: 1000;
-    position: fixed;
+  
 
 }
 
