@@ -1,15 +1,15 @@
 import React from 'react'
 
-function aboutBlock(source,text,title) {
+function block(source,text,title) {
   return (
     <div className="block-two-block">
-    <div className="block-two-block-title">
-        <img src={source} alt="" height="48px" />
-        <h1>{title}</h1>
-    </div>
-    <p>{text}</p>
+      <div className="block-two-block-title">
+          <img src={source} alt="" height="48px" />
+          <h1>{title}</h1>
+      </div>
+      <p>{text}</p>
     </div>
   )
 }
 
-export default aboutBlock
+export default block
