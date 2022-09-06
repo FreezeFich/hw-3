@@ -16,15 +16,20 @@ function Home() {
   const handleAboutHref = () => {
     navigate('/about');
   }
+  const handleHomeButton = () => {
+    navigate("/home")
+  }
+
   return (
     <div>
       <header>
         <div className="header">
-            <img src="https://github.com/FreezeFich/css-cw-1/blob/main/images/Group%205.png?raw=true" alt="" className="logo" />
+            <img onClick={handleHomeButton} src="https://github.com/FreezeFich/css-cw-1/blob/main/images/Group%205.png?raw=true" alt="" className="logo" />
 
             <div className="header-buttons ">
                 <img src="https://cdn-icons-png.flaticon.com/512/4024/4024513.png" alt="" height="30px" width="30px" />
                 <img src="https://cdn-icons-png.flaticon.com/512/2838/2838895.png" height="30px" width="30px" alt="" />
+                <a onClick={handleAboutHref}  className="sign-up">About</a>
                 <a onClick={handleSigninButton}  className="sign-up">Sign Up</a>
                 <a onClick={handleSigninButton}  className="sign-in">Sign In</a>
             </div>

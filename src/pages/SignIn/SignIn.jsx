@@ -126,7 +126,7 @@ function SignIn() {
                     </div>
                 </div>
             </div>
-            {/* <a href='/' className="modal-exit">&times;</a> */}
+            <a onClick={handleCross} className="modal-exit">&times;</a>
         </div>
     </div>
   )

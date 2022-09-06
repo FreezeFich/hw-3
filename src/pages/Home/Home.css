@@ -16,6 +16,11 @@ header {
 
 .about{
     color: #156963;
+    font-weight: 500;
+}
+.about:hover{
+    color: #000000;
+    cursor: pointer;
 }
 
 .header {
